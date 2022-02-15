@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    color:#F2F2F2;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color:#F2F2F2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-wrapper{
+    width: 92rem;
+    height: 50rem;
+    display: flex;
+}
+
+.card{
+    width: auto;
+    height: 100%;
+    padding: 4.8rem;
+    border-radius: 0.8rem;
+}
+
+.sedans-card{
+    background-color:#E28625;
+}
+
+.suvs-card{
+    background-color:#006971;
+}
+
+.luxury-card{
+    background-color:#004140;
+}
+
+.card-heading{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 4rem;
+    margin-top: 3.5rem;
+}
+
+.card-paragraph{
+    color:white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    opacity: 0.75;
+    margin: 2.5rem 0 8.3rem 0;
+}
+
+.learn-more-btn{
+    padding: 1.2rem 3.2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    transition: 0.3s;
+}
+
+body .learn-more-btn:hover{
+    color:white;
+    border: 2px solid white;
+    background: transparent;
+}
+
+.sedans-card .learn-more-btn{
+    color:#E28625;
+}
+
+.suvs-card .learn-more-btn{
+    color:#006971;
+}
+
+.luxury-card .learn-more-btn{
+    color:#004140;
+}
+
+@media screen and (max-width: 960px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        align-items: flex-start;
+        padding: 10rem 0;
+    }
+    .cards-wrapper{
+        flex-direction: column;
+        width: 32.7rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    html{
+        font-size: 55%;
+    }
+}
